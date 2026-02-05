@@ -8,11 +8,225 @@
 <body>
     <link rel="stylesheet" href="style.css"> 
 <div class="container"> 
-  <header id="header"></header> 
-  <section id="hero"></section> 
-  <main id="content"></main> 
+  <header id="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="สัตว์ในตำนานไทย">
+            <h1>สัตว์ในตำนานไทย</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link active">หน้าแรก</a></li>
+                <li><a href="#content" class="nav-link">สัตว์ในตำนาน</a></li>
+                <li><a href="#sidebar" class="nav-link">หมวดหมู่</a></li>
+                <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
+                <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
+            </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle" aria-label="เปิดเมนู">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+    </div>
+</header> 
+  <section id="hero">
+    <div class="hero-content">
+        <h2 class="hero-title">สัตว์ในตำนานไทย</h2>
+        <p class="hero-subtitle">สำรวจโลกแห่งตำนานและนิทานพื้นบ้าน</p>
+        <p class="hero-description">
+            ค้นพบเรื่องราวของสัตว์วิเศษในตำนานไทย ตั้งแต่ครุฑ นาค หงส์ กินรี 
+            และสัตว์หิมพานต์อีกมากมาย พร้อมเรียนรู้ความหมายและคุณค่าที่ซ่อนอยู่ในวัฒนธรรมไทย
+        </p>
+        
+        <div class="hero-buttons">
+            <a href="#content" class="btn btn-primary">เริ่มสำรวจ</a>
+            <a href="#sidebar" class="btn btn-secondary">หมวดหมู่</a>
+        </div>
+
+        <div class="hero-features">
+            <div class="feature-item">
+                <div class="feature-icon">🐉</div>
+                <div class="feature-text">50+ สัตว์ในตำนาน</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📚</div>
+                <div class="feature-text">เรื่องราวครบถ้วน</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-text">ภาพประกอบสวยงาม</div>
+            </div>
+        </div>
+    </div>
+</section>
+  <main id="content">
+    <div class="content-wrapper">
+        <h2 class="content-title">สัตว์ในตำนานไทย</h2>
+        <p class="content-intro">
+            สัตว์ในตำนานไทยเป็นส่วนสำคัญของวัฒนธรรมและความเชื่อของคนไทยมาช้านาน 
+            แต่ละชนิดล้วนมีเรื่องราว ความหมาย และสัญลักษณ์ที่น่าสนใจ
+        </p>
+
+        <div class="creatures-grid">
+            <!-- ครุฑ -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">🦅</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">ครุฑ</h3>
+                    <p class="creature-category">สัตว์หิมพานต์</p>
+                    <p class="creature-description">
+                        พญาครุฑเป็นราชาแห่งนก มีร่างกายครึ่งคนครึ่งนก เป็นพาหนะของพระนารายณ์ 
+                        สัญลักษณ์แห่งอำนาจและความยิ่งใหญ่ ปรากฏในตราแผ่นดินของประเทศไทย
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">อำนาจ</span>
+                        <span class="tag">ความยิ่งใหญ่</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- นาค -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">🐍</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">พญานาค</h3>
+                    <p class="creature-category">สัตว์ศักดิ์สิทธิ์</p>
+                    <p class="creature-description">
+                        พญานาคเป็นเทพผู้ปกครองบาดาล มีรูปร่างเป็นงูใหญ่มีหงอน 
+                        เป็นผู้คุ้มครองพระพุทธศาสนาและแหล่งน้ำ สัญลักษณ์แห่งความอุดมสมบูรณ์
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">น้ำ</span>
+                        <span class="tag">ความอุดมสมบูรณ์</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- หงส์ -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">🦢</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">หงส์</h3>
+                    <p class="creature-category">สัตว์หิมพานต์</p>
+                    <p class="creature-description">
+                        หงส์เป็นนกในตำนานที่มีความสง่างาม มักปรากฏเป็นคู่ 
+                        สัญลักษณ์แห่งความรัก ความบริสุทธิ์ และความสง่างาม นิยมใช้ในงานศิลปะไทย
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">ความรัก</span>
+                        <span class="tag">ความสง่างาม</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- กินรี -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">👸</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">กินรี</h3>
+                    <p class="creature-category">สัตว์หิมพานต์</p>
+                    <p class="creature-description">
+                        กินรีเป็นสัตว์หิมพานต์ครึ่งคนครึ่งนก มีความงดงามและเป็นนักร้องเสียงไพเราะ 
+                        เชื่อว่าอาศัยอยู่ในป่าหิมพานต์ สัญลักษณ์แห่งศิลปะและความงาม
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">ดนตรี</span>
+                        <span class="tag">ความงาม</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ราชสีห์ -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">🦁</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">ราชสีห์</h3>
+                    <p class="creature-category">สัตว์หิมพานต์</p>
+                    <p class="creature-description">
+                        ราชสีห์หรือสิงโตหิมพานต์ เป็นสัตว์เทพที่แสดงถึงความกล้าหาญและพลัง 
+                        มักใช้เป็นผู้พิทักษ์ประตูวัดและพระราชวัง
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">ความกล้าหาญ</span>
+                        <span class="tag">การปกป้อง</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ช้างเอราวัณ -->
+            <div class="creature-card">
+                <div class="creature-image">
+                    <div class="creature-icon">🐘</div>
+                </div>
+                <div class="creature-content">
+                    <h3 class="creature-name">ช้างเอราวัณ</h3>
+                    <p class="creature-category">สัตว์เทพ</p>
+                    <p class="creature-description">
+                        ช้างเอราวัณมีงาสามคู่ เป็นพาหนะของพระอินทร์ เทพเจ้าแห่งสวรรค์ 
+                        สัญลักษณ์แห่งความเป็นมงคล อำนาจ และความสง่างาม
+                    </p>
+                    <div class="creature-tags">
+                        <span class="tag">มงคล</span>
+                        <span class="tag">พลัง</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h3>สนใจเรียนรู้เพิ่มเติม?</h3>
+            <p>ค้นพบสัตว์หิมพานต์และตำนานไทยอื่นๆ อีกมากมาย</p>
+            <a href="#sidebar" class="btn btn-primary">ดูทั้งหมด</a>
+        </div>
+    </div>
+  </main> 
   <aside id="sidebar"></aside> 
   <footer id="footer"></footer>
 </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+            });
+            
+            // ปิดเมนูเมื่อคลิกที่ลิงก์
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                });
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+    </script>
 </body>
 </html>
