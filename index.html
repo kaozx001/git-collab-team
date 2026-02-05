@@ -8,11 +8,54 @@
 <body>
     <link rel="stylesheet" href="style.css"> 
 <div class="container"> 
-  <header id="header"></header> 
+  <header id="header">
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.png" alt="สัตว์ในตำนานไทย">
+            <h1>สัตว์ในตำนานไทย</h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link active">หน้าแรก</a></li>
+                <li><a href="#content" class="nav-link">สัตว์ในตำนาน</a></li>
+                <li><a href="#sidebar" class="nav-link">หมวดหมู่</a></li>
+                <li><a href="#about" class="nav-link">เกี่ยวกับ</a></li>
+                <li><a href="#contact" class="nav-link">ติดต่อ</a></li>
+            </ul>
+        </nav>
+        
+        <button class="mobile-menu-toggle" aria-label="เปิดเมนู">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+    </div>
+</header> 
   <section id="hero"></section> 
   <main id="content"></main> 
   <aside id="sidebar"></aside> 
   <footer id="footer"></footer>
 </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+            });
+            
+            // ปิดเมนูเมื่อคลิกที่ลิงก์
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
